@@ -1,13 +1,8 @@
 const sf = require('sheetify')
 
 const styles = sf`
-  :root {
-    font-size: 4vw;    
-  }
-
-  * {
-    box-sizing: border-box;
-  }
+  :root { font-size: 4vw }
+  * { box-sizing: border-box }
 
   body {
     background: #fff; 
@@ -27,9 +22,7 @@ const styles = sf`
   .sans { font-family: arial, sans-serif }
   .serif { font-family: times, serif }
 
-  main {
-    padding: 1.5rem 2rem;
-  }
+  main { padding: 1.5rem 2rem }
 
   ul {
     margin: .5rem 0;
@@ -38,6 +31,7 @@ const styles = sf`
   }
 
   li {
+    display: block;
     margin: 0;
     padding: 0;
     position: relative;
@@ -53,8 +47,8 @@ const styles = sf`
   }
 
   .indent {
-    text-indent: -2rem;
-    margin-left: 2rem;
+    text-indent: -1rem;
+    margin-left: 1rem;
   }
 
   .load {
@@ -62,6 +56,19 @@ const styles = sf`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .arrow {
+    display: block;
+    position: absolute;
+    height: .5rem;
+    width: .5rem;
+    top: 0.1rem;
+    right: 0.1rem;
+  }
+
+  .arrow svg {
+    display: block;
   }
 `
 

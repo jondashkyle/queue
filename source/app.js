@@ -32,7 +32,10 @@ app.model({
 })
 
 const view = (state, prev, send) => state.loaded
-  ? h`<main>${components.elList(state.entries, send)}</main>`
+  ? h`<main>
+      ${components.iconArrow()}
+      ${components.elList(state.entries, send)}
+    </main>`
   : h`<div class="load">loading</div>`
 
 app.router(['/', view])
