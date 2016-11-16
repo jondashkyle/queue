@@ -27,10 +27,8 @@ const styles = sf`
   .sans { font-family: arial, sans-serif }
   .serif { font-family: times, serif }
 
-  .p1 { padding: 1rem }
-
   main {
-    padding: .25rem 1rem;
+    padding: 1.5rem 2rem;
   }
 
   ul {
@@ -41,18 +39,17 @@ const styles = sf`
 
   li {
     margin: 0;
-    padding: .25rem 0;
+    padding: 0;
     position: relative;
   }
 
   a {
-    display: block;
     color: #00f;
     text-decoration: none;
   }
 
   a:visited {
-    color: #800080;
+    color: #ccc;
   }
 
   .indent {
