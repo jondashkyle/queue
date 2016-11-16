@@ -14,9 +14,13 @@ app.model({
     entries: { }
   },
   subscriptions: [
-    (send, done) => parser()
+    (send, done) => {
+      parser({
+        src: 'https://dl.dropboxusercontent.com/u/193780/queue.txt'
+      })
       .catch(err => console.log(err))
       .then(data => send('entries', data, done))
+    }
   ],
   reducers: {
     entries: (state, data) => ({

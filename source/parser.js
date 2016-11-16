@@ -47,7 +47,7 @@ const format = data => {
 
 const parse = opts => {
   const options = x({
-    src: 'https://dl.dropboxusercontent.com/u/193780/queue.txt'
+    src: ''
   }, opts)
 
   return r({
