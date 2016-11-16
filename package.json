@@ -1,0 +1,26 @@
+{
+  "name": "feed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo source/index.js:bundle.js --dir public --live --pushstate -- -t [ sheetify/transform ]",
+    "build": "browserify source/index.js -o public/bundle.js -t [ sheetify/transform ] -g es2040"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "budo": "^9.2.1",
+    "es2040": "^1.2.4",
+    "sheetify": "^5.2.0"
+  },
+  "dependencies": {
+    "bel": "^4.5.0",
+    "choo": "github:yoshuawuyts/choo#4",
+    "object.values": "^1.0.3",
+    "reqwest": "^2.0.5",
+    "uuid": "^2.0.3",
+    "xtend": "^4.0.1"
+  }
+}
