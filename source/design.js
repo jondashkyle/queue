@@ -19,10 +19,12 @@ const styles = sf`
   .tac { text-align: center }
   .fwb { font-weight: bold }
   .ttu { text-transform: uppercase }
+
+  .mono { font-family: 'Akkurat-mono' }
   .sans { font-family: arial, sans-serif }
   .serif { font-family: times, serif }
 
-  main { padding: 1.5rem 2rem }
+  main { padding: 1rem 2rem }
 
   ul {
     margin: .5rem 0;
@@ -32,7 +34,7 @@ const styles = sf`
 
   li {
     display: block;
-    margin: 0;
+    margin: .5rem 0;
     padding: 0;
     position: relative;
   }
@@ -47,8 +49,8 @@ const styles = sf`
   }
 
   .indent {
-    text-indent: -1rem;
-    margin-left: 1rem;
+    text-indent: -2rem;
+    margin-left: 2rem;
   }
 
   .load {

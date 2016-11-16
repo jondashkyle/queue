@@ -14,7 +14,7 @@ const elEntry = data => h`
 
 const elGroup = data => h`
   <li>
-    <div class="ttu sans fwb">${data.heading}</div>
+    <div class="ttu sans">${data.heading}</div>
     <ul class="sans">${ov(data.entries).map(entry => elEntry(entry))}</ul>
   </li>
 `
